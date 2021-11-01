@@ -1,9 +1,22 @@
 import React from 'react'
+import Navbar from "./Navbar"
+import NewIn from './sections/NewIn'
+import Footer from "./Footer"
+import Banner from "./Banner"
+import Card from "./card/Card"
+import Category from './sections/Category'
+import Offer from './sections/Offer'
 
-export default function home() {
+export default function Home() {
     return (
         <div>
-            <h2>Hola soy el home </h2>
+            
+        <Navbar/>
+        <Banner />
+         <NewIn/>
+        <Category/>
+        <Offer/>
+       <Footer />
         </div>
     )
 }

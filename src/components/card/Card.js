@@ -1,9 +1,6 @@
 import React from 'react'
 
-import {Box,Image , Text ,Center ,Flex,Spacer} from "@chakra-ui/react"
-
-
-
+import {Box,Image , Text ,Center ,Flex,Spacer} from "@chakra-ui/react" 
 
 export default function Card() {
    
@@ -16,11 +13,11 @@ export default function Card() {
         }
 
   return (
-    <Box maxW="sm" borderWidth="1px" borderColor="transparent" >
+    <Box   borderColor="transparent"  w={[100, 150, 200]} m="10">
 
       <Image src={property.imageUrl} alt={property.imageAlt}  objectPosition="align" maxH="auto"/>
 
-      <Box mt="3" mb="3">
+      <Box mt="3" mb="3" borderColor="red">
         <Flex>
       <Box > <Text>{property.title}</Text> </Box>
       <Spacer />
@@ -28,7 +25,7 @@ export default function Card() {
       </Flex>
       </Box>
 
-      <Center  borderColor="black" borderWidth="1px" h={10} w="sm"> <Text> Agregar  </Text> </Center>
+      <Center  borderColor="black" borderWidth="1px" h={10} w={[100, 150, 200]}> <Text> Agregar  </Text> </Center>
     </Box>
   )}
 

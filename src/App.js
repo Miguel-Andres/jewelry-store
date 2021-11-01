@@ -1,10 +1,11 @@
 
-import Home from "./components/home";
+import Home from "./components/Home";
+import AllItem from "./components/sections/AllItem";
 
 function App() {
   return (
   <>
-  <Home/>
+  <AllItem/>
   </>
   );
 }

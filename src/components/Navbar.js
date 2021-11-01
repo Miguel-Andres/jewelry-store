@@ -4,13 +4,11 @@ import {BsFillBasketFill  as CartIcon} from "react-icons/bs"
 import Logo from "../Logo"
 import {
   Box,
-  Flex,
- 
+  Flex, 
   HStack,
   Link,
   IconButton,
-  Badge,
- 
+  Badge, 
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -29,7 +27,7 @@ export default function Navbar() {
         rounded={'md'}
         _hover={{
           textDecoration: 'none',
-          bg: useColorModeValue('gray.200', 'gray.700'),
+          bg: useColorModeValue('smokewhite', 'smokewhite'),
         }}
         href={'#'}>
         {children}
@@ -44,7 +42,7 @@ export default function Navbar() {
         
           
             <>
-              <Box bg={useColorModeValue('gray.200', 'gray.900')} px={4}>
+              <Box bg={useColorModeValue('smokewhite', 'smokewhite')} px={4}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-around'} >
                   <IconButton
                     size={'md'}
@@ -85,7 +83,7 @@ export default function Navbar() {
                 ) : null}
               </Box>
         
-              <Box p={4} bg="red">Main Content Here</Box>
+            
             </>
           );
         }
