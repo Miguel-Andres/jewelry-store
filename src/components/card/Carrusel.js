@@ -1,5 +1,5 @@
 import React ,{useRef}  from "react";
-import{HStack,VStack,Box,Button} from "@chakra-ui/react"
+import{HStack,Button} from "@chakra-ui/react"
 import Card from "./Card"
 
 

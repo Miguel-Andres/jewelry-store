@@ -2,30 +2,23 @@ import React from 'react'
 
 import {Box,Image , Text ,Center ,Flex,Spacer} from "@chakra-ui/react" 
 
-export default function Card() {
+export default function Card({name ,img,price}) {
    
-        const property = {
-          imageUrl: "https://res.cloudinary.com/mejuri-com/image/upload/c_scale,f_auto,q_60,w_640/v1628705724/homepage/Categories%20/Homepage_Categories_Rings_Fall2021",
-          imageAlt: "anillos gold ",                   
-          title: "Anillos Gold Earning ",
-          formattedPrice: "$1.150",
-         
-        }
-
+       
   return (
-    <Box   borderColor="transparent"  w={[100, 150, 200]} m="10">
+    <Box   borderColor="red"  w={[120, 200, 200,250]}  >
 
-      <Image src={property.imageUrl} alt={property.imageAlt}  objectPosition="align" maxH="auto"/>
+      <Image src={img} alt={name}    boxSize={[150,150,200,250]} />
 
-      <Box mt="3" mb="3" borderColor="red">
-        <Flex>
-      <Box > <Text>{property.title}</Text> </Box>
+      <Box mt="3" mb="3" >
+        <Flex  h="30px" >
+      <Box > <Text>{name}</Text> </Box>
       <Spacer />
-      <Box > <Text>{property.formattedPrice}</Text></Box>
+      <Box > <Text>${price}</Text></Box>
       </Flex>
       </Box>
 
-      <Center  borderColor="black" borderWidth="1px" h={10} w={[100, 150, 200]}> <Text> Agregar  </Text> </Center>
+      <Center  borderColor="black" borderWidth="1px" h={10} w={[120, 150, 200 ,250]}> <Text> Agregar  </Text> </Center>
     </Box>
   )}
 

@@ -2,13 +2,13 @@ import {
     Box,
     chakra,
     Container,
-    Link,
     Stack,
     Text,
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaInstagram, FaTwitter } from 'react-icons/fa';
+  import { BsWhatsapp } from 'react-icons/bs'
 
   import Logo from "../Logo"
 
@@ -41,8 +41,26 @@ import {
       </chakra.button>
     );
   };
+
+
   
   export default function SmallWithLogoLeft() {
+
+    const style ={
+    
+        visibility: "visible"  ,      
+        position: "fixed" ,
+        right: "10px" ,
+        bottom:"10px" ,
+        zIndex: "100" ,
+        color: "white",
+        backgroundColor: "#4dc247" ,
+        boxShadow:" 2px 2px 6px rgba(0, 0, 0, 0.4)" ,
+        borderRadius: "50%",
+      
+    }
+
+  
     return (
       <Box
         bg={useColorModeValue('gray.50', 'gray.900')}
@@ -55,20 +73,24 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Logo />
-          <Text>© 2020 Jowelry All rights reserved</Text>
+         <Logo/>
+          <Text>© 2021 Jowelry All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/joyascataleya2020/'}>
+           <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Watshap'} href={'#'}>
-              <FaInstagram />
+            <SocialButton label={'Watshap'} href={""}>
+            <BsWhatsapp /> 
             </SocialButton>
           </Stack>
         </Container>
+         
+        <a href="https://wa.me/5491163524477" target="_blank" style={style} aria-label="Comunicate por WhatsApp" rel="noreferrer">
+       <BsWhatsapp size="45"/>   </a>
+      
       </Box>
     );
   }

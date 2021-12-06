@@ -1,18 +1,15 @@
-import { Stack ,Center} from "@chakra-ui/layout";
+
 import React from "react";
+
 import Slider from "react-slick";
-
-import Card from "./Card"
-
-export default function Carrusel2() {
- 
+export default function Carrusel2({children , data}) {   
     var settings = {
       dots: false,
       infinite: false,      
       speed: 500,
       slidesToShow: 4.8,
       slidesToScroll: 3,
-      initialSlide: 2,
+      initialSlide: !data && 1,
       
        
       responsive: [
@@ -43,29 +40,12 @@ export default function Carrusel2() {
       ]
     };
     return (
-      <div>
+    
         
-        <Slider {...settings}   >
-           
-
-
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-
-           
-        
-        </Slider>
-      </div>
+        <Slider {...settings}   >       
+        {children}
+       </Slider>
+    
     );
   
 }

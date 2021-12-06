@@ -1,11 +1,13 @@
 
 import Home from "./components/Home";
-import AllItem from "./components/sections/AllItem";
+import WashapIcon from "./components/WashapIcon";
+
 
 function App() {
   return (
   <>
-  <AllItem/>
+<Home/>
+<WashapIcon/>
   </>
   );
 }
