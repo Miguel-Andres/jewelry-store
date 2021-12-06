@@ -1,4 +1,4 @@
-import { BsWhatsapp } from 'react-icons/bs'
+
 import {Stack} from "@chakra-ui/react"
 import React from 'react'
 

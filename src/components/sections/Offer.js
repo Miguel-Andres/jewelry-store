@@ -25,7 +25,7 @@ export default function Offer() {
             </Center>
        <Container  overflow="hidden"  maxW="container.xl" >
       <Carrusel2>
-       {data.data?.map(item=> <Card {...item} /> )}
+       {data.data?.map((item,i)=> <Card {...item} key={i}/> )}
       </Carrusel2>
 
 
