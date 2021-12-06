@@ -7,7 +7,7 @@ import Banner from "./Banner";
 import Category from "./sections/Category";
 import Offer from "./sections/Offer";
 
-export default function Home() {
+export default function Inicio() {
   return (
     <div>
       <Navbar />

@@ -1,12 +1,12 @@
 
-import Home from "./components/Home";
+import Inicio from "./components/Inicio";
 import WashapIcon from "./components/WashapIcon";
 
 
 function App() {
   return (
   <>
-<Home/>
+<Inicio/>
 <WashapIcon/>
   </>
   );
