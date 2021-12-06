@@ -1,5 +1,5 @@
 import React from 'react'
-import Foto from "../assets/Banner22.jpg"
+
 
 import {Stack,Flex,VStack,Text,useBreakpointValue} from "@chakra-ui/react"
 export default function Banner() {
