@@ -88,7 +88,7 @@ import {
           </Stack>
         </Container>
          
-        <a href="https://wa.me/5491163524477" target="_blank" style={style} aria-label="Comunicate por WhatsApp" rel="noreferrer">
+        <a href="https://wa.me/5491168777196" target="_blank" style={style} aria-label="Comunicate por WhatsApp" rel="noreferrer">
        <BsWhatsapp size="45"/>   </a>
       
       </Box>
